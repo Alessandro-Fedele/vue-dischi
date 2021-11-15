@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fontsource/montserrat/index.css";
+@import "variables.scss";
+
+body {
+    font-family: $main-font;
+    background-color: $primary-bg-color;
+    .my-nav {
+        height: 60px;
+        background-color: $secondary-bg-color;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        img {
+          height: 80%;
+        }
+    }
+    .card {
+        background-color: $secondary-bg-color;
+        padding: 20px;
+        text-align: center;
+        height: 420px;
+        h4 {
+            font-weight: bold;
+            color: white;
+            padding-bottom: 10px;
+        }
+        p {
+            color: rgb(134, 134, 134);
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    }
+}
