@@ -5,10 +5,9 @@
     @change="$emit(`genreClick`, genreValue)"
   >
     <option value="">Tutti i Generi</option>
-    <option value="rock">Rock</option>
-    <option value="pop">Pop</option>
-    <option value="jazz">Jazz</option>
-    <option value="metal">Metal</option>
+    <option v-for="(genre, i) in genreList" :key="i" :value="genre">
+      {{ genre }}
+    </option>
   </select>
 </template>
 <script>
@@ -19,5 +18,6 @@ export default {
       genreValue: "",
     };
   },
+  props: ["genreList"],
 };
 </script>
